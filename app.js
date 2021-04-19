@@ -5,12 +5,13 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Defaults for the array
-let items = ["Buy Food","Cook Food","Eat Food"];
+let items = ["Add Task"];
 // Engine for rendering EJS
 app.set('view engine' , 'ejs');
 app.use(bodyParser.urlencoded({
     extended:true
 }));
+// Serving up static files
 app.use(express.static("public"))
 
 
