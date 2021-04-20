@@ -6,24 +6,27 @@
             <img src="/images/hakz-hub logo.png" alt="Telvin's logo">
             <h1>To Do List</h1>
         </div>
+        <div class="tag">
             <div class="box" id="heading">
-            <h1><%= listTitle %> </h1>
-            </div>
-            <div class="box">
-                <!-- Adding new input -->
-                <% for( let i = 0; i < newListItems.length; i++ ) { %>
-                    <div class="item">
-                        <input type="checkbox">
-                        <p><%= newListItems[i] %> </p>
-                    </div>
-                <% } %>
+                <h1><%= listTitle %> </h1>
+                </div>
+                <div class="box">
+                    <!-- Adding new input -->
+                    <% for( let i = 0; i < newListItems.length; i++ ) { %>
+                        <div class="item">
+                            <input type="checkbox">
+                            <p><%= newListItems[i] %> </p>
+                        </div>
+                    <% } %>
+                
+                    <!-- passing data from page to browser -->
+                <form class="item" action="/" method="POST">
+                    <input type="text" name="newItem" id="input" placeholder="Enter new task" autocomplete="off">
+                    <button type="submit" name="button" class="submit" value=<%= listTitle %>>+</button>
+                </form>
+            </div> 
+        </div>
             
-                <!-- passing data from page to browser -->
-            <form class="item" action="/" method="POST">
-                <input type="text" name="newItem" id="input" placeholder="Enter new task" autocomplete="off">
-                <button type="submit" name="button" class="submit" value=<%= listTitle %>>+</button>
-            </form>
-        </div> 
       
 <div class="design2"></div>
 

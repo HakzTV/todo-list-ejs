@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "lato";
+  font-family: "lato", sans-serif;
 }
 
 body {
@@ -65,14 +66,23 @@ h1 {
   color: #fff;
   padding: 10px;
 }
-
+/* .tag {
+  left: 50%;
+  top: 50%;
+  margin-left: -25%;
+  position: absolute;
+  margin-top: -25%;
+} */
 .box {
   max-width: 400px;
   margin: 50px auto;
-  background: rgb(218, 157, 218);
+  /* background: rgb(218, 157, 218); */
+  background: #ffffff;
+
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
+
 .box h1 {
   color: black;
 }
@@ -108,7 +118,7 @@ p {
   margin: 0;
   padding: 20px;
   font-size: 20px;
-  font-weight: 200;
+  /* font-weight: 200; */
   color: #00204a;
 }
 
@@ -122,7 +132,9 @@ button {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #a683e3;
+  /* background-color: #a683e3; */
+  background: rgb(218, 157, 218);
+
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
@@ -154,4 +166,18 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+
+@media (max-width: 375px) {
+  .todo img {
+    width: 80px;
+    height: auto;
+  }
+  .box {
+    max-width: 200px;
+    margin: 30px auto;
+    background: rgb(218, 157, 218);
+    border-radius: 3px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
 }
